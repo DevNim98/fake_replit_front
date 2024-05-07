@@ -6,7 +6,7 @@ class APIRepository {
   Future<String> getPythonOutput(String code) async {
     try {
       final response = await http.post(
-        Uri.http('localhost:3000', 'run-python'),
+        Uri.http('34.176.61.2:3000', 'run-python'),
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',
         },
